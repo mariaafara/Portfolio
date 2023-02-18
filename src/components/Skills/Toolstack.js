@@ -1,55 +1,44 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
+import ReactTooltip from "react-tooltip";
 import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
   DiGit,
+  DiApple,
 } from "react-icons/di";
 import {
-  SiPytorch,
-  SiFirebase,
-  SiNextdotjs,
+  SiLinux,
+  SiVisualstudiocode,
+  SiPostman,
+  SiJupyter,
+  SiPycharm,
 } from "react-icons/si";
 
-function Techstack() {
+function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <SiLinux data-tip="Linux"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <DiApple data-tip="Apple"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+        <SiVisualstudiocode data-tip="Visual Studio Code"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+        <SiPycharm data-tip="Pycharm"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+        <SiPostman data-tip="Postman"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+        <DiGit data-tip="Git"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPytorch />
+        <SiJupyter data-tip="Jupyter Lab" />
       </Col>
     </Row>
   );
 }
 
-export default Techstack;
+export default Toolstack;
