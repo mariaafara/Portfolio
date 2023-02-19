@@ -4,14 +4,11 @@ import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
-function ExperienceCards(props) {
-  const descriptions = props.description.split('\n').map((description) => (
-    <li>{description}</li>
-  ));
+function EducationCards(props) {
 
-  const skills = props.skills.split('\n').map((skill) => (
+  const courses = props.courses.split('\n').map((course) => (
     <p style={{ border: "1px solid white", padding: "5px", margin: "5px", minWidth: "100px" }}>
-      <strong className="purple">{skill}</strong>
+      <strong className="purple">{course}</strong>
     </p>
   ));
 
@@ -20,14 +17,14 @@ function ExperienceCards(props) {
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Title>{props.period}</Card.Title>
-        <Card.Title>{props.company_location}</Card.Title>
+        <Card.Title>{props.uni_location}</Card.Title>
 
-        <ul style={{ textAlign: "justify" }}>
-          {descriptions}
-        </ul>
+        <Card.Text style={{ textAlign: "center", padding: "25px" }}>
+          {props.description}
+        </Card.Text>
 
-        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", }}>
-          {skills}
+        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center"}}>
+          {courses}
         </div>
 
         {"\n"}
@@ -50,4 +47,5 @@ function ExperienceCards(props) {
     </Card>
   );
 }
-export default ExperienceCards;
+
+export default EducationCards;
