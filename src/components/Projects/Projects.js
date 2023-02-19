@@ -31,7 +31,7 @@ function Projects() {
             <Col md={4} className="project-card">
             <ProjectCard
               imgPath={docSearch}
-              isBlog={false}
+              isReport={false}
               title="Document Search"
               description={`Built a system to filter documents based on a specified set of company names and keywords, with the output being a set of CSV files containing filtered documents and their associated mentions.
                             Implemented a hybrid document search engine combining N-gram extraction and semantic embeddings to compare similarity between documents and a query.
@@ -47,7 +47,7 @@ function Projects() {
             <Col md={4} className="project-card">
             <ProjectCard
               imgPath={map_gen}
-              isBlog={false}
+              isReport={false}
               title="Dungeon Map Generator"
               description={`Developed a map generator using Q-learning, a technique of reinforcement learning,  that produces a maze with a starting point, ending point, and treasure location, all connected by a path.
                             Built a maze generator API service with FastAPI, a cutting-edge web framework for creating APIs.
@@ -65,7 +65,7 @@ function Projects() {
             <Col md={4} className="project-card">
             <ProjectCard
               imgPath={qa}
-              isBlog={false}
+              isReport={false}
               title="QA"
               description={`Implemented a question answering system using semantic similarity matching.
                             Utilized a BERT model to convert questions to feature vectors.
@@ -84,7 +84,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={mt_quality}
-              isBlog={false}
+              isReport={false}
               title="MT Quality Prediction"
               description={`Developed machine learning models to predict the quality of machine translation engine output using regression techniques.
                             Divided the dataset into training, validation, and testing data and used cross-validation technique to evaluate the performance of the models.
@@ -98,7 +98,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={nmt}
-              isBlog={false}
+              isReport={false}
               title="Neural Machine Translation"
               description={`Developed a machine learning model for neural machine translation (NMT) using a general encoder-decoder architecture.
                             Preprocessed a large-scale parallel corpus dataset to prepare it for NMT training, including data cleaning, filtering, normalization, and encoding.
@@ -112,7 +112,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={face_detection}
-              isBlog={false}
+              isReport={false}
               title="Face Landmark Detection"
               description={`Developed a model for facial landmark detection using a dataset of 7,049 images with 15 features.
                             Goal was to detect the coordinates and orientation of eyes, eyebrows, nose, and mouth in each image.
@@ -129,7 +129,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={ecom_regression}
-              isBlog={false}
+              isReport={false}
               title="Ecommerce Customer Regression"
               description={`It is asked to a company to decide whether to focus the efforts on developing the mobile application or the website for further improving the sales.
               The solution involves exploring the provided dataset using data visualization to understand the correlations between different factors and how they affect how much the customer spends.
@@ -142,30 +142,30 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={txt_editor}
-              isBlog={false}
+              isReport={true}
               title="Text editor"
               description={`Constructed a text editor interface that is capable of predicting the next word in a sentence, and that spell checks the written word and proposes synonyms or acronyms replacements for each word in the input text.`}
-
+              ghLink="https://drive.google.com/file/d/11zL7mQmOz2SoinIbwu6DfwCKT5PsfDio/view"
             />
           </Col>
 
            <Col md={4} className="project-card">
             <ProjectCard
               imgPath={breaking_news}
-              isBlog={false}
+              isReport={true}
               title="Breaking News Detection Based on Text Summarization"
               description={`We prefer to read the summary of articles before we decide to jump in for reading the entire article.
               Built a summarization model to summarize news articles.
               Identified keywords which will provide semantic relations to breaking news and used a vocabulary list which is collected by scraping breaking news websites in order to do unsupervised learning for our unlabeled dataset.
-              Built a classification model to detect breaking news.
-              Developed using Python, Keras, Tensorflow, Sklearn, tf-idf...`}
+              Built a classification model to detect breaking news.`}
+              ghLink="https://drive.google.com/file/d/1r4lcourDZV1K5QvXomA8CnaFnerszV93/view"
             />
           </Col>
 
             <Col md={4} className="project-card">
             <ProjectCard
               imgPath={fashion_classifier}
-              isBlog={false}
+              isReport={false}
               title="Fashion Classification"
               description={`Trained an Image (Fashions) Classification model.
               Deployed the classifier using TensorFlow Serving with Docker.
@@ -177,11 +177,11 @@ function Projects() {
            <Col md={4} className="project-card">
             <ProjectCard
               imgPath={hotel_recommender}
-              isBlog={false}
+              isReport={true}
               title="Hotel Recommendation System"
               description={`Built a recommender system of the best hotels based on their characteristics, then recommend hotels which are most similar in terms of reviews to a particular hotel specified by the user.
                             Used two approaches, content based approach and user- and item- based collaborative filtering approach.`}
-
+              ghLink="https://drive.google.com/file/d/1r5YMa4C63X25rmm6yi4HRjt9GZL9PSyV/view"
             />
           </Col>
         </Row>
