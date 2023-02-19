@@ -2,12 +2,18 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import fashion_classifier from "../../Assets/Projects/fashion_classifier.png";
+import face_detection from "../../Assets/Projects/face_detection.png";
+import mt_quality from "../../Assets/Projects/mt_quality.png";
+import qa from "../../Assets/Projects/qa.png";
+import docSearch from "../../Assets/Projects/docSearch.png";
+import map_gen from "../../Assets/Projects/map_gen.png";
+import nmt from "../../Assets/Projects/nmt.png";
+import hotel_recommender from "../../Assets/Projects/hotel_recommender.png";
+import txt_editor from "../../Assets/Projects/txt_editor.png";
+import ecom_regression from "../../Assets/Projects/ecom_regression.png";
+import breaking_news from "../../Assets/Projects/breaking_news.png";
+
 
 function Projects() {
   return (
@@ -21,70 +27,161 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+
+            <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={docSearch}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Document Search"
+              description={`Built a system to filter documents based on a specified set of company names and keywords, with the output being a set of CSV files containing filtered documents and their associated mentions.
+                            Implemented a hybrid document search engine combining N-gram extraction and semantic embeddings to compare similarity between documents and a query.
+                            Utilized an inverted index data structure to store the mapping between terms (N-grams) and the documents they appear in.
+                            Preprocessed the input queries and documents by removing punctuation, new lines, converting to lowercase, tokenizing, removing stop words, and lemmatizing.
+                            Developed a simple API using FastAPI to simplify the use of the search engine, allowing for running interactive queries and adding new documents to the database.
+                            Containerized the system using Docker to allow for easy setup and reproducibility.`}
+              ghLink="https://github.com/mariaafara/documentSearch"
+             /* demoLink="https://github.com/mariaafara/MT-quality-prediction" */
+            />
+          </Col>
+
+            <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={map_gen}
+              isBlog={false}
+              title="Dungeon Map Generator"
+              description={`Developed a map generator using Q-learning, a technique of reinforcement learning,  that produces a maze with a starting point, ending point, and treasure location, all connected by a path.
+                            Built a maze generator API service with FastAPI, a cutting-edge web framework for creating APIs.
+                            Created API documentation with Swagger UI for easy API exploration and testing.
+                            Generated an output response that displays a plot of the generated maze with markers for the starting point, treasure point, and ending point.
+                            Created s user-friendly web application with Streamlit to interact with the API and visualize the results of the project.
+                            Implemented the use of Docker containers to package the API service and the UI service.
+                            Utilized Docker Compose to containerize the application and simplify the deployment process.
+                            Applied object-oriented programming principles to design and implement the agent\'s decision-making process.`}
+              ghLink="https://github.com/mariaafara/DungeonMapGenerator"
+             /* demoLink="https://github.com/mariaafara/MT-quality-prediction" */
+            />
+          </Col>
+
+            <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={qa}
+              isBlog={false}
+              title="QA"
+              description={`Implemented a question answering system using semantic similarity matching.
+                            Utilized a BERT model to convert questions to feature vectors.
+                            Employed Milvus, an open-source vector similarity search engine and vector database, to retrieve the most similar ID(s) to the user's question.
+                            Used MongoDB to return the corresponding answer(s) for the retrieved ID(s).
+                            Collected a large number of questions with answers for the system to learn from.
+                            Enabled users to insert new question-answer pairs into the database and delete existing ones.
+                            Built a RESTful API using FastAPI to provide users with a simple and intuitive way to interact with the Q&A system.
+                            Containerized the Q&A system with Docker, making it easy to deploy and run the system in different environments.
+                            Set up the system by downloading a pre-trained BERT model, using Bert-as-a-service, initializing the Milvus collection and index, and running the FastAPI server in a Docker container.`}
+              ghLink="https://github.com/mariaafara/QA"
+             /* demoLink="https://github.com/mariaafara/MT-quality-prediction" */
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={mt_quality}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="MT Quality Prediction"
+              description={`Developed machine learning models to predict the quality of machine translation engine output using regression techniques.
+                            Divided the dataset into training, validation, and testing data and used cross-validation technique to evaluate the performance of the models.
+                            Implemented baseline regression models including SVR, XGBoost, Gradient Boosting, and RandomForests to establish a baseline model performance.
+                            Conducted feature scaling and transformation and performed hyperparameter tuning using RandomizedSearch to improve model performance.
+                            Identified a problem in the data where the predicted values were centered around the mean and attempted to solve it by using the SMOGN technique and adding more features and tuning parameters.`}
+              ghLink="https://github.com/mariaafara/MT-quality-prediction"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={nmt}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Neural Machine Translation"
+              description={`Developed a machine learning model for neural machine translation (NMT) using a general encoder-decoder architecture.
+                            Preprocessed a large-scale parallel corpus dataset to prepare it for NMT training, including data cleaning, filtering, normalization, and encoding.
+                            Implemented a custom Language class to manage vocabulary dictionaries and numerical encoding of source and target language sentences.
+                            Evaluated the trained model using multiple metrics, including perplexity, accuracy, and BLEU score, to measure its performance on both the training and validation sets.
+                            Fine-tuned the hyperparameters of the model to improve its performance and generalization capabilities, using techniques such as learning rate decay, dropout, and early stopping.`}
+              ghLink="https://github.com/mariaafara/neural-machine-translation"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={face_detection}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Face Landmark Detection"
+              description={`Developed a model for facial landmark detection using a dataset of 7,049 images with 15 features.
+                            Goal was to detect the coordinates and orientation of eyes, eyebrows, nose, and mouth in each image.
+                            In the data preparation phase, performed EDA and feature engineering, created a custom data generator for mini-batch loading and data augmentation, built a prediction model for each feature, and labeled missing values using trained models.
+                            Used 14 models to fill missing values in the dataset since more than half of the examples contained missing values.
+                            Used various deep learning architectures for prediction models and data augmentation techniques.
+                            Generated sample images using the custom data generator, including augmented images.
+                            Trained a main prediction model using the prepared dataset to predict all 15 facial features.`}
+              ghLink="https://github.com/mariaafara/face-landmark-detection"
+            />
+          </Col>
+
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ecom_regression}
+              isBlog={false}
+              title="Ecommerce Customer Regression"
+              description={`It is asked to a company to decide whether to focus the efforts on developing the mobile application or the website for further improving the sales.
+              The solution involves exploring the provided dataset using data visualization to understand the correlations between different factors and how they affect how much the customer spends.
+              Several baseline regression models were built, including Ridge regression, KNeighborsRegressor, SVR, DecisionTreeRegressor, RandomForestRegressor, AdaBoostRegressor, GradientBoostingRegressor, ExtraTreesRegressor, VotingRegressor, and XGBoost.
+              The results suggest that the company should focus their efforts on improving their mobile application rather than their website.`}
+              ghLink="https://github.com/mariaafara/ecommerce-customer-regression"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={txt_editor}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Text editor"
+              description={`Constructed a text editor interface that is capable of predicting the next word in a sentence, and that spell checks the written word and proposes synonyms or acronyms replacements for each word in the input text.`}
+
             />
           </Col>
 
-          <Col md={4} className="project-card">
+           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={breaking_news}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Breaking News Detection Based on Text Summarization"
+              description={`We prefer to read the summary of articles before we decide to jump in for reading the entire article.
+              Built a summarization model to summarize news articles.
+              Identified keywords which will provide semantic relations to breaking news and used a vocabulary list which is collected by scraping breaking news websites in order to do unsupervised learning for our unlabeled dataset.
+              Built a classification model to detect breaking news.
+              Developed using Python, Keras, Tensorflow, Sklearn, tf-idf...`}
+            />
+          </Col>
+
+            <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={fashion_classifier}
+              isBlog={false}
+              title="Fashion Classification"
+              description={`Trained an Image (Fashions) Classification model.
+              Deployed the classifier using TensorFlow Serving with Docker.
+              Created a visual web interface using Flask web framework to help end-users to consume predictions through API calls.`}
+              ghLink="https://github.com/mariaafara/Deploying-FashionClassifier-using-TensorFlow-Serving-with-Docker-and-Flask"
+            />
+          </Col>
+
+           <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={hotel_recommender}
+              isBlog={false}
+              title="Hotel Recommendation System"
+              description={`Built a recommender system of the best hotels based on their characteristics, then recommend hotels which are most similar in terms of reviews to a particular hotel specified by the user.
+                            Used two approaches, content based approach and user- and item- based collaborative filtering approach.`}
+
             />
           </Col>
         </Row>

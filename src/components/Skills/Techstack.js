@@ -2,20 +2,14 @@ import React from "react";
 import ReactTooltip from "react-tooltip";
 import { Col, Row } from "react-bootstrap";
 import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
   DiPython,
   DiSpark,
 } from "react-icons/di";
 import {
   SiPytorch,
-  SiJava,
   SiTensorflow,
   SiNumpy,
-  SiGnubash,
   SiScikitlearn,
-  SiHtml5,
   SiDocker,
   SiPandas,
   SiKubernetes,
@@ -26,12 +20,8 @@ import {
   SiStreamlit,
   SiMysql,
   SiKeras
-
 } from "react-icons/si";
 
-import {
-  FaAngular
-} from "react-icons/fa"
 
 function Techstack() {
   return (
