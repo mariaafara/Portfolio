@@ -23,6 +23,7 @@ function Experience() {
               company_location=<p className="purple">Acolad, Paris, France</p>
               description= {`Conducted research and developed machine learning and deep learning models using scikit-learn, HuggingFace, Keras, TensorFlow, and PyTorch on both CPU and GPU environments.
                 Optimized the models to improve their performance and accuracy.
+                I developed and implemented an automated deployment process for Kubernetes applications using GitHub Actions and Helm Chart. This resulted in a remarkable increase in deployment speed and efficiency, leading to faster and more efficient releases of our applications.
                 Containerized the machine learning models and APIs using Docker and deployed them into production using GitHub Actions CI/CD, on both GCP and GitHub Container.
                 Automated data pipelines using Airflow to improve efficiency and accuracy of the data preparation process. Designed and built pipelines for creating neural machine translation engines.
                 Developed, tested, and maintained internal text-processing libraries to streamline data preparation and improve the quality of the machine translation engines.
