@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
 import projects from "../../Assets/projects.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import homeLogo from "../../Assets/woman_portfolio2.svg";
 
 function Home() {
   return (
