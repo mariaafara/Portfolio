@@ -27,7 +27,8 @@ function Experience() {
                 Containerized the machine learning models and APIs using Docker and deployed them into production using GitHub Actions CI/CD, on both GCP and GitHub Container.
                 Automated data pipelines using Airflow to improve efficiency and accuracy of the data preparation process. Designed and built pipelines for creating neural machine translation engines.
                 Developed, tested, and maintained internal text-processing libraries to streamline data preparation and improve the quality of the machine translation engines.
-                Solved various business problems, including identifying personal information based on GDPR using NER models, anonymizing client data by replacing sensitive information with synthetic/fake data, identifying domains of translation projects using classification models, and estimating the quality of machine translation outputs to determine the need for proofreading.`}
+                Solved various business problems, including identifying personal information based on GDPR using NER models, anonymizing client data by replacing sensitive information with synthetic/fake data, identifying domains of translation projects using classification models, and estimating the quality of machine translation outputs to determine the need for proofreading.
+                Developed an innovative video summarization prototype that leverages OpenAI's LLMs, GPT-4 and ChatGPT, for transcription, summarization, and translation of videos, and deployed the solution on an in-premise Kubernetes cluster through a comprehensive CI/CD pipeline with GitHub Actions workflows and efficient management of backend and frontend services using Helm charts and Kubernetes resource files.`}
               skills={`Keras
                Pytorch
                TensorFlow
