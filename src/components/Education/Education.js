@@ -8,6 +8,9 @@ import certificate2 from "../../Assets/Certificates/certificate2.png";
 import certificate3 from "../../Assets/Certificates/certificate3.png";
 import certificate4 from "../../Assets/Certificates/certificate4.png";
 import lxmls_certificate from "../../Assets/Certificates/lxmls-certificate.png";
+import certificate5 from "../../Assets/Certificates/certificate5.png";
+import certificate6 from "../../Assets/Certificates/certificate6.png";
+import certificate7 from "../../Assets/Certificates/certificate7.png";
 
 function Education() {
   return (
@@ -91,6 +94,31 @@ function Education() {
 
           <Col md={6} className="project-card">
             <CertificationCard
+              certificateLink="https://www.linkedin.com/learning/certificates/7bc231856d38604341433a63dd0041c98e5c116c096768053eeee1e7602024db"
+              certificateImage={certificate6}
+            />
+          </Col>
+
+          <Col md={6} className="project-card">
+            <CertificationCard
+              certificateLink="https://www.linkedin.com/learning/certificates/a92dd9c1fefcc26b6b2ba1717318fc5379a9165c65c8e7991367b412549cd179"
+              certificateImage={certificate7}
+            />
+          </Col>
+
+          <Col md={6} className="project-card">
+            <CertificationCard
+              certificateLink="https://www.linkedin.com/learning/certificates/d6d97c1210d32efac564fa8dff17e9200a7e1a858000ef2b1dca9379db97cd27"
+              certificateImage={certificate5}
+            />
+          </Col>
+
+
+
+
+
+          <Col md={6} className="project-card">
+            <CertificationCard
               certificateLink=""
               certificateImage={lxmls_certificate}
             />
@@ -124,6 +152,7 @@ function Education() {
               certificateImage={certificate4}
             />
           </Col>
+
 
         </Row>
       </Container>

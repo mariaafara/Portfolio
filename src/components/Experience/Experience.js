@@ -14,12 +14,37 @@ function Experience() {
           My Recent <strong className="purple">Experiences </strong>
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={6} className="project-card">
+            <ProjectCard
+              /* imgPath={acolad} */
+              isBlog={false}
+              title=<strong className="purple">ML Engineer </strong>
+              period=<p className="purple">October 2023 - Present</p>
+              company_location=<p className="purple">Wolters Kluwer, Paris, France</p>
+              description= {`Developed a new feature for analyzing legal documents leveraging Azure OpenAI LLMs and Retrieval-Augmented Generation (RAG) systems, enhancing the application's ability to provide precise answers to legal queries.
+                Built services for document parsing, chunk storage in a vector database, and question answering by retrieving top-k chunks and generating answers.
+                Used Langfuse to monitor and optimize the performance of the RAG system, storing user requests in PostgreSQL for comprehensive tracing and analysis.
+                Designed and managed microservices architecture using RabbitMQ for inter-service communication, Kubernetes (K8s) for container orchestration, Helm charts for Kubernetes application management, Terraform for infrastructure provisioning, and leveraging Azure cloud services for scalable and efficient infrastructure management.
+                Implemented Docker-based deployments and orchestrated CI/CD pipelines with GitHub Actions for automated deployment.
+                Collaborated closely with project managers and software engineers to ensure alignment of development and deployment processes.`}
+              skills={`Azure
+               OpenAI
+               RAG
+               Docker
+               Kubernetes
+               Helm Chart
+               Terraform
+               Github Actions
+               RabbitMQ
+               Apache Airflow`}
+            />
+          </Col>
           <Col md={6} className="project-card">
             <ProjectCard
               /* imgPath={acolad} */
               isBlog={false}
               title=<strong className="purple">ML NLP Engineer </strong>
-              period=<p className="purple">March 2021 - Present</p>
+              period=<p className="purple">March 2021 - October 2023</p>
               company_location=<p className="purple">Acolad, Paris, France</p>
               description= {`Conducted research and developed machine learning and deep learning models using scikit-learn, HuggingFace, Keras, TensorFlow, and PyTorch on both CPU and GPU environments.
                 Optimized the models to improve their performance and accuracy.

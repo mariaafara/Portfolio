@@ -21,22 +21,19 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I am a passionate ML/NLP engineer️
-              <br />
-              <br /> My fields of interests <i><b className="purple"> Data engineering, Deep Learning, Machine Learning,
-              Natural Language Processing, and Data Science. </b></i>
-              <br />
-              <br />
-              I am passionate about using technology to solve real-world problems, and I believe that
-              <i><b className="purple"> NLP and ML </b></i> are powerful tools that can help us understand
-              and interact with language in new and exciting ways.
-              <br />
-              <br />
-              I believe that ML/DL models only create value once they’re in production. Otherwise, what is a model
-              worth if it cannot be reliably deployed and supported in production for the intended usage.
-              <br />
-              <br />
-              I am always eager to learn new things and take on new challenges.
+
+                I am a passionate ML engineer️
+                <br />
+                <br /> My fields of interest include <i><b className="purple">Data Engineering, Deep Learning, Machine Learning, Natural Language Processing, Data Science, and MLOps.</b></i>
+                <br />
+                <br />
+                I am committed to using technology to solve real-world problems, and I believe that <i><b className="purple">NLP and ML</b></i> are powerful tools that can help us understand and interact with language in new and exciting ways. My current focus is on ensuring that these models are robustly and reliably deployed in production environments.
+                <br />
+                <br />
+                I believe that ML/DL models only create value once they’re in production. A model’s true worth is realized when it is reliably deployed and supported in production for its intended usage. Ensuring smooth and efficient transitions from development to production is where my expertise lies.
+                <br />
+                <br />
+                I am always eager to learn new things and take on new challenges, particularly those that bridge the gap between ML model development and operational deployment.
 
             </p>
           </Col>

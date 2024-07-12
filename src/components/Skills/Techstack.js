@@ -1,10 +1,7 @@
 import React from "react";
 import ReactTooltip from "react-tooltip";
 import { Col, Row } from "react-bootstrap";
-import {
-  DiPython,
-  DiSpark,
-} from "react-icons/di";
+import { DiPython, DiSpark ,DiGoogleCloudPlatform, } from "react-icons/di";
 import {
   SiPytorch,
   SiTensorflow,
@@ -19,9 +16,12 @@ import {
   SiFastapi,
   SiStreamlit,
   SiMysql,
-  SiKeras
+  SiKeras,
+  SiTerraform,
 } from "react-icons/si";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMicrosoft, faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 function Techstack() {
   return (
@@ -54,6 +54,9 @@ function Techstack() {
         <SiKubernetes data-tip="Kubernetes"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <SiTerraform data-tip="Terraform"/>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <SiScikitlearn data-tip="Sci-Kit Learn"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
@@ -73,6 +76,12 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiApacheairflow data-tip="Apache Airflow"/>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FontAwesomeIcon icon={faMicrosoft} data-tip="Azure Cloud" size="1x"/>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FontAwesomeIcon icon={faGoogle} data-tip="GCP" size="1x"/>
       </Col>
       <div className="icontooltip">
         <ReactTooltip place="top" type="dark" effect="solid"/>
